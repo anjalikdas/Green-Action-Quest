@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Carbon Calculator Result{% endblock %}
+
+{% block content %}
+<div class="container" style="padding: 173px;">
+    <h2 style="color: rgb(232, 226, 226);">Carbon Calculator Result</h2>
+    <p style="color: rgb(232, 226, 226);">Total Emission: {{ total_emission }} kg CO2</p>
+    <p style="color: rgb(232, 226, 226);">Thank you for contributing to a sustainable future!</p>
+
+    <a href="{% url 'challenges_page' %}">Take Eco-Friendly Challenges</a>
+</div>
+{% endblock %}

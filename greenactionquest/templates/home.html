@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Green Action Quest{% endblock %}
+
+{% block content %}
+
+
+<div class="container my-6">
+    <div class="card max-w-card">
+        <div class="card-body">
+            <h3 class="card-title">Explore Your Impact with <span class="text-green">Green Action Quest!</span></h3>
+            <p class="card-text">Curious about your environmental footprint? Take the first step towards a sustainable
+                lifestyle by using our Carbon Footprint Calculator. Understand the total carbon emissions associated
+                with your daily activities and discover ways to reduce your impact.
+
+            </p>
+            <h4>🌿 How It Works:</h4>
+            <p>Visit the Carbon Calculator: <a class="link" href="{% url 'carbon_calculator' %}"> Click
+                    here </a>to
+                access the Carbon Footprint Calculator.
+                Enter Your Data: Provide information about your travel, energy usage, diet, and more.
+                Get Your Results: Receive a detailed breakdown of your carbon emissions and personalized suggestions for
+                improvement.
+            </p>
+
+            <h4>📊 Why Calculate Your Carbon Footprint?</h4>
+            <p>Awareness: Understand the environmental impact of your choices.
+                Personalized Insights: Receive tailored recommendations for a greener lifestyle.
+                Track Progress: Measure your carbon reduction over time.
+            </p>
+            <h4>🌱 Ready for a Challenge?</h4>
+            <p>Once you've calculated your carbon footprint, dive into our weekly eco-friendly challenges! Earn points,
+                climb the leaderboard, and make a positive impact on the planet.
+            </p>
+            <h4>🚀 Get Started: Calculate Your Carbon Footprint Now</h4>
+            <p>Join Green Action Quest in the journey towards a sustainable future. Let's turn awareness into action and
+                create positive change together!
+            </p>
+            <a class="btn btn-primary btn-lg" href="{% url 'carbon_calculator' %}" role="button">Calculate
+                Carbon Emission</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

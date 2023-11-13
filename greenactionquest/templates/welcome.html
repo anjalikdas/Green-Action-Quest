@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Green Action Quest{% endblock %}
+
+{% block content %}
+
+
+<div class="container my-6">
+    <div class="card max-w-card">
+        <div class="card-body">
+            <h3 class="card-title">Welcome to <span class="text-green">Green Action Quest!</span></h3>
+            <p class="card-text">Embark on a transformative journey towards a more sustainable and eco-friendly
+                lifestyle with Green Action Quest. Our mission is to empower individuals like you to make conscious
+                choices that positively impact the environment.
+
+                What We Offer:</p>
+            <h4>🌱 Eco-Friendly Challenges</h4>
+            <p>Join our weekly challenges designed to inspire and guide you through simple yet impactful actions. From
+                reducing plastic usage to choosing sustainable transportation, each challenge contributes to a greener
+                and healthier planet. Challenge yourself, earn points, and see the real-world impact of your
+                eco-friendly decisions.
+            </p>
+
+            <h4>🌿 Carbon Footprint Calculator:</h4>
+            <p>Curious about your carbon footprint? Use our Carbon Footprint Calculator to assess your environmental
+                impact based on daily activities. From travel emissions to home energy usage, gain insights into your
+                carbon footprint and receive personalized suggestions for a more sustainable lifestyle.
+            </p>
+            <div class="text-center">
+                <a href="{% url 'login' %}" class="btn btn-primary">Login Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Welcome to Green Action Quest!
+
+Embark on a transformative journey towards a more sustainable and eco-friendly lifestyle with Green Action Quest. Our
+mission is to empower individuals like you to make conscious choices that positively impact the environment.
+
+What We Offer:
+
+🌱 Eco-Friendly Challenges:
+
+🌿 Carbon Footprint Calculator: -->
+
+
+{% endblock %}
